@@ -16,7 +16,7 @@ const Footer = () => {
             <Link to="/" className="inline-block">
               <img src={whiteLogo} alt="Masala House" className="h-12 w-auto object-contain" />
             </Link>
-            <p className="text-subtext leading-relaxed">
+            <p className="text-white leading-relaxed">
               Authentic Indian cuisine bringing you the vibrant flavors of the streets and royal kitchens of India.
             </p>
           </div>
@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Hours */}
           <div className="space-y-6">
             <h3 className="text-white text-lg font-bold uppercase tracking-wider">Hours</h3>
-            <ul className="space-y-3 text-subtext">
+            <ul className="space-y-3 text-white">
               <li className="flex justify-between items-center">
                 <span>Breakfast</span>
                 <span className="text-white font-medium">8 AM – 11 AM</span>
@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-white text-lg font-bold uppercase tracking-wider">Contact</h3>
             <ul className="space-y-4">
-              <li className="flex items-start text-subtext group">
+              <li className="flex items-start text-white group">
                 <MapPin size={20} className="mr-3 text-primary shrink-0 mt-1" />
                 <a 
                   href="https://maps.google.com/?q=2118+Willow+Pass+Rd,+Concord,+CA" 
@@ -59,7 +59,7 @@ const Footer = () => {
                   2118 Willow Pass Rd,<br />Concord, CA
                 </a>
               </li>
-              <li className="flex items-center text-subtext group gap-3">
+              <li className="flex items-center text-white group gap-3">
                 <a href="tel:+19254903344" className="flex items-center gap-3 hover:text-white transition-colors duration-200">
                   <Phone size={20} className="text-primary shrink-0" />
                   <span>(925) 490-3344</span>
@@ -71,7 +71,7 @@ const Footer = () => {
           {/* Catering + Socials */}
           <div className="space-y-6">
             <h3 className="text-white text-lg font-bold uppercase tracking-wider">Catering</h3>
-            <p className="text-subtext">
+            <p className="text-white">
               Contact Sakshi for your next event:
             </p>
             <a href="tel:+12068225058" className="font-bold text-white flex items-center hover:text-primary transition-colors duration-200">
@@ -80,16 +80,16 @@ const Footer = () => {
             </a>
             
             <div className="pt-4 flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-subtext hover:text-white hover:border-primary transition-all duration-300">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-primary transition-all duration-300">
                 <FaFacebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-subtext hover:text-white hover:border-primary transition-all duration-300">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-primary transition-all duration-300">
                 <FaInstagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-subtext hover:text-white hover:border-primary transition-all duration-300">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-primary transition-all duration-300">
                 <FaYelp size={18} />
               </a>
-              <a href="https://maps.google.com/?q=2118+Willow+Pass+Rd,+Concord,+CA" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-subtext hover:text-white hover:border-primary transition-all duration-300">
+              <a href="https://maps.google.com/?q=2118+Willow+Pass+Rd,+Concord,+CA" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:border-primary transition-all duration-300">
                 <FaGoogle size={18} />
               </a>
             </div>
@@ -97,14 +97,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar: Copyright + Address Summary */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-subtext text-xs border-t border-gray-800/50 pt-8 mt-8">
-          <p className="text-center md:text-left">
+        <div className="flex flex-col items-center text-white text-xs border-t border-gray-800/50 pt-8 mt-8">
+          <div className="flex space-x-6 mb-4">
+            <Link to="/blogs" className="hover:text-white transition-colors duration-200">Blogs</Link>
+            <Link to="/terms" className="hover:text-white transition-colors duration-200">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-white transition-colors duration-200">Privacy Policy</Link>
+          </div>
+          <p className="text-center text-white">
             © 2026 Masala House Concord · 2118 Willow Pass Rd, Concord, CA
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/blogs" className="hover:text-white transition-colors duration-200">Blogs</Link>
-            <Link to="#" className="hover:text-white transition-colors duration-200">Privacy Policy</Link>
-          </div>
         </div>
       </div>
     </footer>

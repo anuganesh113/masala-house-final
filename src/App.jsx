@@ -12,6 +12,9 @@ import Catering from './pages/Catering';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+
 function App() {
   return (
     <Router>
@@ -27,6 +30,8 @@ function App() {
             <Route path="/catering" element={<Catering />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
