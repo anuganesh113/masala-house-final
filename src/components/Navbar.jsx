@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Menu', path: '/menu' },
+    { name: 'Deals', path: '/deals', special: true },
     { name: 'Catering', path: '/catering' },
     { name: 'Blogs', path: '/blogs' },
     { name: 'Contact', path: '/contact' },
@@ -47,9 +48,14 @@ const Navbar = () => {
               <Link 
                 key={link.name} 
                 to={link.path}
-                className={`font-medium transition-colors duration-200 hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-white'}`}
+                className={`relative font-medium transition-colors duration-200 hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-white'} ${link.special ? 'text-primary animate-pulse font-bold' : ''}`}
               >
                 {link.name}
+                {link.special && (
+                  <span className="absolute -top-3 -right-6 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full animate-bounce shadow-lg shadow-red-500/50">
+                    HOT
+                  </span>
+                )}
               </Link>
             ))}
           </div>
@@ -72,9 +78,15 @@ const Navbar = () => {
           <Link 
             key={link.name} 
             to={link.path}
-            className={`font-semibold text-xl tracking-tight ${location.pathname === link.path ? 'text-primary' : 'text-white'}`}
+            className={`relative font-semibold text-xl tracking-tight ${location.pathname === link.path ? 'text-primary' : 'text-white'} ${link.special ? 'text-primary animate-pulse' : ''}`}
+            onClick={() => setIsOpen(false)}
           >
             {link.name}
+            {link.special && (
+              <span className="absolute -top-2 -right-8 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full animate-bounce">
+                HOT
+              </span>
+            )}
           </Link>
         ))}
         <div className="w-full px-6 pt-4">

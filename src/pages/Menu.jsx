@@ -378,24 +378,15 @@ const Menu = () => {
                       <div className="absolute top-6 left-6 flex flex-col gap-2">
                         <motion.span 
                           whileHover={{ scale: 1.05 }}
-                          className={`backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em] border shadow-sm ${
-                            item.diet === 'Veg' ? 'bg-green-100/90 text-green-700 border-green-200/50' :
-                            item.diet === 'Non-veg' ? 'bg-red-100/90 text-red-700 border-red-200/50' :
-                            item.diet === 'Vegan' ? 'bg-green-800/90 text-white border-green-700/50' :
+                          className={`backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em] border shadow-md ${
+                            item.diet === 'Veg' ? 'bg-[#1a9d4afc] text-white border-green-400/30' :
+                            item.diet === 'Non-veg' ? 'bg-red-600 text-white border-red-500/30' :
+                            item.diet === 'Vegan' ? 'bg-emerald-700 text-white border-emerald-600/30' :
                             'bg-white/80 text-dark border-white/40'
                           }`}
                         >
                           {item.diet}
                         </motion.span>
-                        {item.chefPick && (
-                          <motion.span 
-                            initial={{ x: -20, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            className="backdrop-blur-xl bg-primary/90 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em] text-white border border-white/20 flex items-center gap-1.5 shadow-xl"
-                          >
-                            <Star size={10} fill="currentColor" /> Chef's Pick
-                          </motion.span>
-                        )}
                       </div>
 
                       {/* Price Badge Overlay */}
