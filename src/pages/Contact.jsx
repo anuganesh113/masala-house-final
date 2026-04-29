@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { MapPin, Phone, Clock, Mail, ChevronRight, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';

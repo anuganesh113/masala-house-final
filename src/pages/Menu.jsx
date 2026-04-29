@@ -14,7 +14,7 @@ export const mockMenu = [
     price: '$9.50', 
     cat: 'Street Foods', 
     diet: 'Veg', 
-    img: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop',
+    img: '/images/menu/masala-house-files-3l30l0d77uk.jpg',
     chefPick: true,
     spiceLevel: 2,
     nutrition: { cal: 320, protein: '8g', carbs: '42g', fat: '14g' },
@@ -32,7 +32,7 @@ export const mockMenu = [
     price: '$8.50', 
     cat: 'Street Foods', 
     diet: 'Vegan', 
-    img: 'https://images.unsplash.com/photo-1601050638917-3f048381abd3?q=80&w=800&auto=format&fit=crop',
+    img: '/images/menu/masala-house-files-4h19ofb9tku.jpg',
     spiceLevel: 3,
     nutrition: { cal: 180, protein: '4g', carbs: '32g', fat: '2g' },
     ingredients: ['Semolina Puris', 'Potatoes', 'Black Chickpeas', 'Mint Water', 'Tamarind'],
@@ -50,7 +50,7 @@ export const mockMenu = [
     price: '$13.99', 
     cat: 'Appetizers', 
     diet: 'Non-veg',
-    img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=800&auto=format&fit=crop',
+    img: '/images/menu/masala-house-files-5d7lm3cxien.jpg',
     spiceLevel: 3,
     nutrition: { cal: 280, protein: '34g', carbs: '4g', fat: '12g' },
     ingredients: ['Boneless Chicken', 'Yogurt', 'Lemon', 'Kashmiri Chili', 'Garam Masala'],
@@ -69,7 +69,7 @@ export const mockMenu = [
     cat: 'Entrees', 
     diet: 'Non-veg', 
     chefPick: true,
-    img: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800&auto=format&fit=crop',
+    img: '/images/menu/masala-house-files-9mnyxw4h2u9.jpg',
     spiceLevel: 1,
     nutrition: { cal: 450, protein: '28g', carbs: '12g', fat: '32g' },
     ingredients: ['Tandoori Chicken', 'Tomato Puree', 'Heavy Cream', 'Butter', 'Fenugreek'],
@@ -78,14 +78,37 @@ export const mockMenu = [
     ]
   },
 
-  // OTHER ITEMS (Minimal detail for brevity, can expand later)
-  { id: 4, name: 'Vegetable Pakoras', desc: 'Crispy assorted vegetable fritters coated in gram flour batter.', price: '$8.99', cat: 'Appetizers', diet: 'Vegan', img: 'https://images.unsplash.com/photo-1626132644529-56e96e529949?q=80&w=800&auto=format&fit=crop', spiceLevel: 2 },
-  { id: 6, name: 'Palak Paneer', desc: 'Fresh cottage cheese cubes simmered in a vibrant, spiced spinach puree.', price: '$16.99', cat: 'Entrees', diet: 'Veg', img: 'https://images.unsplash.com/photo-1626777553754-0402b8d0092d?q=80&w=800&auto=format&fit=crop', spiceLevel: 2 },
-  { id: 7, name: 'Lamb Rogan Josh', desc: 'Tender lamb slow-cooked in a classic kashmiri style with aromatic spices.', price: '$19.99', cat: 'Entrees', diet: 'Non-veg', img: 'https://images.unsplash.com/photo-1545244671-91e38645995b?q=80&w=800&auto=format&fit=crop', spiceLevel: 4 },
-  { id: 8, name: 'Garlic Naan', desc: 'Traditional clay-oven bread infused with fresh garlic and cilantro.', price: '$4.50', cat: 'Breads', diet: 'Veg', img: 'https://images.unsplash.com/photo-1601303584126-26944ad4976d?q=80&w=800&auto=format&fit=crop', spiceLevel: 0 },
-  { id: 9, name: 'Basmati Rice', desc: 'Fragrant, long-grain basmati rice cooked to perfection.', price: '$4.99', cat: 'Breads', diet: 'Vegan', img: 'https://images.unsplash.com/photo-1512058560366-cd242d45869d?q=80&w=800&auto=format&fit=crop', spiceLevel: 0 },
-  { id: 10, name: 'Mango Lassi', desc: 'Creamy yogurt drink blended with sweet Alphonso mangoes.', price: '$5.50', cat: 'Drinks', diet: 'Veg', img: 'https://images.unsplash.com/photo-1546173159-315724bc9353?q=80&w=800&auto=format&fit=crop', spiceLevel: 0 },
-  { id: 11, name: 'Gulab Jamun', desc: 'Warm milk dumplings in a saffron-infused cardamom syrup.', price: '$6.50', cat: 'Desserts', diet: 'Veg', img: 'https://images.unsplash.com/photo-1589112106528-b5dc98acc5cc?q=80&w=800&auto=format&fit=crop', spiceLevel: 0 }
+  // OTHER ITEMS
+  { id: 4, name: 'Vegetable Pakoras', desc: 'Crispy assorted vegetable fritters coated in gram flour batter.', price: '$8.99', cat: 'Appetizers', diet: 'Vegan', img: '/images/menu/masala-house-files-ccoi25jtgzi.jpg', spiceLevel: 2 },
+  { id: 6, name: 'Palak Paneer', desc: 'Fresh cottage cheese cubes simmered in a vibrant, spiced spinach puree.', price: '$16.99', cat: 'Entrees', diet: 'Veg', img: '/images/menu/masala-house-files-dc0qjvxz7ct.jpg', spiceLevel: 2 },
+  { id: 7, name: 'Lamb Rogan Josh', desc: 'Tender lamb slow-cooked in a classic kashmiri style with aromatic spices.', price: '$19.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-jeosrdd3vij.jpg', spiceLevel: 4 },
+  { id: 8, name: 'Garlic Naan', desc: 'Traditional clay-oven bread infused with fresh garlic and cilantro.', price: '$4.50', cat: 'Breads', diet: 'Veg', img: '/images/menu/masala-house-files-ogyi8njy4m8.jpg', spiceLevel: 0 },
+  { id: 9, name: 'Basmati Rice', desc: 'Fragrant, long-grain basmati rice cooked to perfection.', price: '$4.99', cat: 'Breads', diet: 'Vegan', img: '/images/menu/masala-house-files-p9vrmbvl1ax.jpg', spiceLevel: 0 },
+  { id: 10, name: 'Mango Lassi', desc: 'Creamy yogurt drink blended with sweet Alphonso mangoes.', price: '$5.50', cat: 'Drinks', diet: 'Veg', img: '/images/menu/masala-house-files-pfwjstwxvq6.jpg', spiceLevel: 0 },
+  { id: 11, name: 'Gulab Jamun', desc: 'Warm milk dumplings in a saffron-infused cardamom syrup.', price: '$6.50', cat: 'Desserts', diet: 'Veg', img: '/images/menu/masala-house-files-pxng70adbmn.jpg', spiceLevel: 0 },
+  { id: 12, name: 'Tandoori Chicken', desc: 'Bone-in chicken marinated in yogurt and spices, roasted in clay oven.', price: '$15.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-u3tdygcxkcr.jpg', spiceLevel: 2 },
+  { id: 13, name: 'Chana Masala', desc: 'Hearty chickpeas slow-cooked in a tangy tomato and onion gravy.', price: '$14.99', cat: 'Entrees', diet: 'Vegan', img: '/images/menu/masala-house-files-vojkg9quksp.jpg', spiceLevel: 3 },
+  { id: 14, name: 'Mutton Biryani', desc: 'Aromatic basmati rice cooked with tender mutton and whole spices.', price: '$21.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-wbiqmbpcsb1.jpg', spiceLevel: 3 },
+  { id: 15, name: 'Aloo Tikki Chaat', desc: 'Spiced potato patties topped with yogurt, chutneys, and sev.', price: '$8.99', cat: 'Street Foods', diet: 'Veg', img: '/images/menu/masala-house-files-3l30l0d77uk.jpg', spiceLevel: 2 },
+  { id: 16, name: 'Dahi Puri', desc: 'Crispy puris stuffed with potatoes and drowned in sweetened yogurt.', price: '$7.99', cat: 'Street Foods', diet: 'Veg', img: '/images/menu/masala-house-files-4h19ofb9tku.jpg', spiceLevel: 1 },
+  { id: 17, name: 'Bhel Puri', desc: 'A savory snack made of puffed rice, vegetables, and a tangy tamarind sauce.', price: '$6.99', cat: 'Street Foods', diet: 'Vegan', img: '/images/menu/masala-house-files-5d7lm3cxien.jpg', spiceLevel: 2 },
+  { id: 18, name: 'Paneer Tikka', desc: 'Cubes of paneer marinated in spices and grilled in a tandoor.', price: '$12.99', cat: 'Appetizers', diet: 'Veg', img: '/images/menu/masala-house-files-9mnyxw4h2u9.jpg', spiceLevel: 2 },
+  { id: 19, name: 'Keema Samosa', desc: 'Crispy pastry filled with spiced minced lamb and peas.', price: '$9.99', cat: 'Appetizers', diet: 'Non-veg', img: '/images/menu/masala-house-files-ccoi25jtgzi.jpg', spiceLevel: 3 },
+  { id: 20, name: 'Chicken Korma', desc: 'Tender chicken cooked in a rich, creamy sauce made of nuts and yogurt.', price: '$17.50', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-dc0qjvxz7ct.jpg', spiceLevel: 1 },
+  { id: 21, name: 'Paneer Butter Masala', desc: 'Soft paneer cubes cooked in a rich, creamy tomato gravy.', price: '$16.50', cat: 'Entrees', diet: 'Veg', img: '/images/menu/masala-house-files-jeosrdd3vij.jpg', spiceLevel: 2 },
+  { id: 22, name: 'Dal Makhani', desc: 'Slow-cooked black lentils in a creamy and buttery gravy.', price: '$14.99', cat: 'Entrees', diet: 'Veg', img: '/images/menu/masala-house-files-ogyi8njy4m8.jpg', spiceLevel: 1 },
+  { id: 23, name: 'Malai Kofta', desc: 'Deep-fried potato and paneer balls in a rich and creamy cashew curry.', price: '$16.99', cat: 'Entrees', diet: 'Veg', img: '/images/menu/masala-house-files-p9vrmbvl1ax.jpg', spiceLevel: 1 },
+  { id: 24, name: 'Lamb Vindaloo', desc: 'A fiery, tangy curry made with tender pieces of lamb and potatoes.', price: '$20.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-pfwjstwxvq6.jpg', spiceLevel: 5 },
+  { id: 25, name: 'Shrimp Curry', desc: 'Succulent shrimp simmered in a coconut milk base with coastal spices.', price: '$22.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-pxng70adbmn.jpg', spiceLevel: 3 },
+  { id: 26, name: 'Saag Chicken', desc: 'Chicken cooked with a nutritious and flavorful blend of pureed spinach.', price: '$17.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-u3tdygcxkcr.jpg', spiceLevel: 2 },
+  { id: 27, name: 'Baingan Bharta', desc: 'Smoky, roasted eggplant mashed and cooked with onions, tomatoes, and spices.', price: '$15.99', cat: 'Entrees', diet: 'Vegan', img: '/images/menu/masala-house-files-vojkg9quksp.jpg', spiceLevel: 2 },
+  { id: 28, name: 'Chicken Tikka Masala', desc: 'Roasted chicken chunks served in a rich red, creamy, lightly spiced sauce.', price: '$18.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-wbiqmbpcsb1.jpg', spiceLevel: 2 },
+  { id: 29, name: 'Onion Kulcha', desc: 'Leavened bread stuffed with spiced onions and baked in the tandoor.', price: '$4.99', cat: 'Breads', diet: 'Veg', img: '/images/menu/masala-house-files-3l30l0d77uk.jpg', spiceLevel: 0 },
+  { id: 30, name: 'Tandoori Roti', desc: 'Whole wheat flatbread baked in a traditional clay oven.', price: '$3.50', cat: 'Breads', diet: 'Vegan', img: '/images/menu/masala-house-files-4h19ofb9tku.jpg', spiceLevel: 0 },
+  { id: 31, name: 'Chicken Biryani', desc: 'Fragrant basmati rice layered with marinated chicken, saffron, and spices.', price: '$18.99', cat: 'Entrees', diet: 'Non-veg', img: '/images/menu/masala-house-files-5d7lm3cxien.jpg', spiceLevel: 3 },
+  { id: 32, name: 'Vegetable Biryani', desc: 'Aromatic rice dish cooked with mixed vegetables and traditional spices.', price: '$15.99', cat: 'Entrees', diet: 'Veg', img: '/images/menu/masala-house-files-9mnyxw4h2u9.jpg', spiceLevel: 2 },
+  { id: 33, name: 'Rasmalai', desc: 'Soft cottage cheese patties soaked in sweetened, thickened milk with cardamom.', price: '$6.99', cat: 'Desserts', diet: 'Veg', img: '/images/menu/masala-house-files-ccoi25jtgzi.jpg', spiceLevel: 0 },
+  { id: 34, name: 'Sweet Lassi', desc: 'A refreshing and traditional yogurt-based drink sweetened with sugar.', price: '$4.99', cat: 'Drinks', diet: 'Veg', img: '/images/menu/masala-house-files-dc0qjvxz7ct.jpg', spiceLevel: 0 }
 ];
 
 const Menu = () => {
@@ -143,8 +166,8 @@ const Menu = () => {
           initial={{ scale: 1 }}
           animate={{ scale: 1.08 }}
           transition={{ duration: 25, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
-          style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1596797038558-964d14280fd7?q=80&w=2000&auto=format&fit=crop")' }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
+          style={{ backgroundImage: 'url("/images/menu/masala-house-files-9mnyxw4h2u9.jpg")' }}
         />
         
         {/* Premium Gradient Overlay */}
@@ -355,7 +378,12 @@ const Menu = () => {
                       <div className="absolute top-6 left-6 flex flex-col gap-2">
                         <motion.span 
                           whileHover={{ scale: 1.05 }}
-                          className="backdrop-blur-xl bg-white/80 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em] text-dark border border-white/40 shadow-sm"
+                          className={`backdrop-blur-xl px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.15em] border shadow-sm ${
+                            item.diet === 'Veg' ? 'bg-green-100/90 text-green-700 border-green-200/50' :
+                            item.diet === 'Non-veg' ? 'bg-red-100/90 text-red-700 border-red-200/50' :
+                            item.diet === 'Vegan' ? 'bg-green-800/90 text-white border-green-700/50' :
+                            'bg-white/80 text-dark border-white/40'
+                          }`}
                         >
                           {item.diet}
                         </motion.span>
@@ -407,7 +435,7 @@ const Menu = () => {
                         </a>
                         <Link 
                           to={`/menu/${item.id}`}
-                          className="flex-1 bg-white text-dark border border-borderCustom py-4 rounded-2xl text-xs font-black uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-dark hover:text-white hover:border-dark transition-all shadow-sm"
+                          className="flex-1 bg-white text-primary border border-primary py-4 rounded-2xl text-xs font-black uppercase tracking-[0.2em] flex items-center justify-center gap-2 hover:bg-primary hover:text-white transition-all shadow-sm"
                         >
                           <Eye size={16} strokeWidth={3} />
                         </Link>
