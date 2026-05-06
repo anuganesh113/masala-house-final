@@ -16,7 +16,9 @@ export default {
         borderCustom: "#E0D5C8", // Borders
       },
       fontFamily: {
-        sans: ['Helvetica', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Helvetica', 'system-ui', 'sans-serif'],
+        bebas: ['"Bebas Neue"', 'cursive'],
+        sansita: ['Sansita', 'serif'],
       },
       maxWidth: {
         'site': '1200px',

@@ -1,4 +1,4 @@
-import { Phone, CheckCircle, MapPin, Truck, Users, Leaf } from 'lucide-react';
+import { Phone, CheckCircle, MapPin, Truck, Users, Leaf, ChefHat, Utensils, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 
@@ -42,7 +42,7 @@ const Catering = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="text-gray-200 text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto font-light tracking-wide drop-shadow"
           >
-            Tray service from <span className="text-primary font-medium">$18/person</span>
+            Premium Tray Service
             <span className="hidden md:inline lg:px-2"> · </span>
             <br className="md:hidden" />
             <span className="mt-2 md:mt-0 inline-block">Contra Costa County & Bay Area</span>
@@ -163,89 +163,107 @@ const Catering = () => {
         </div>
       </section>
 
-      {/* ZONE 4: PRICING & PACKAGES SPLIT */}
-      <section className="section-padding bg-altBg/30">
-        <div className="site-container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 shadow-2xl rounded-[2rem] overflow-hidden border border-borderCustom bg-white">
-            
-            {/* ZONE 4A: PRICING TABLE */}
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+      {/* ZONE 4: CATERING EXCELLENCE & FEATURES */}
+      <section className="section-padding bg-altBg/30 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+
+        <div className="site-container px-4 relative z-10">
+          <div className="text-center mb-16">
+            <motion.span 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              className="p-8 md:p-12 lg:p-16"
+              className="text-primary font-bold tracking-[0.3em] uppercase text-sm mb-4 block"
             >
-              <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-2">Catering Pricing</h2>
-              <p className="text-primary font-medium text-lg mb-10">$18–$35 per person depending on menu</p>
-              
-              <div className="space-y-6">
-                <h4 className="text-sm uppercase tracking-widest text-subtext font-bold mb-4 border-b border-borderCustom pb-2">Full Tray Pricing (Serves ~40)</h4>
-                <div className="grid grid-cols-1 gap-4">
-                  {[
-                    { name: 'Dal (Lentils)', price: '$90' },
-                    { name: 'Vegetable Specialties', price: '$110' },
-                    { name: 'Paneer / Special Veg', price: '$160' },
-                    { name: 'Chicken Entrees', price: '$180' },
-                    { name: 'Lamb / Goat Specialties', price: '$200' },
-                    { name: 'Basmati Rice', price: '$70' },
-                    { name: 'Fresh Naan', price: '$2/pc' },
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex justify-between items-center group">
-                      <span className="text-dark font-medium group-hover:text-primary transition-colors">{item.name}</span>
-                      <div className="flex-1 border-b border-dotted border-subtext/30 mx-4 h-4"></div>
-                      <span className="text-dark font-bold">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-xs text-subtext italic mt-6">* Custom menu pricing available upon request. All trays serve approximately 40 guests.</p>
-              </div>
-            </motion.div>
-
-            {/* ZONE 4B: PACKAGE EXAMPLES (GREEN BG) */}
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              Why Choose Masala House
+            </motion.span>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
-              className="bg-[#f0f9f4] p-8 md:p-12 lg:p-16 border-l border-borderCustom relative overflow-hidden"
+              className="text-4xl md:text-5xl font-black text-dark tracking-tighter"
             >
-              {/* Subtle background flair */}
-              <div className="absolute top-0 right-0 p-10 opacity-5 text-green-800 rotate-12">
-                <CheckCircle size={200} />
-              </div>
+              Catering Excellence <span className="text-primary italic">Perfected</span>
+            </motion.h2>
+          </div>
 
-              <div className="relative z-10">
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#1a4731] mb-8">Sample Packages</h2>
-                
-                <div className="space-y-6 mb-12">
-                  {[
-                    { title: 'Birthday Bash', guests: '50 guests', range: '~$900–$1,100' },
-                    { title: 'Corporate Lunch', guests: '40 guests', range: '~$700–$900' },
-                    { title: 'Grand Wedding', guests: '100 guests', range: '~$1,800–$2,500' },
-                    { title: 'Family Gathering', guests: '25 guests', range: '~$500–$700' },
-                  ].map((pkg, idx) => (
-                    <div key={idx} className="bg-white/60 backdrop-blur-sm p-6 rounded-xl border border-green-200/50 hover:bg-white transition-all duration-300 hover:shadow-lg group">
-                      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-                        <div>
-                          <h4 className="text-xl font-bold text-dark group-hover:text-green-700 transition-colors">{pkg.title}</h4>
-                          <span className="text-sm text-green-700/70 font-medium">{pkg.guests}</span>
-                        </div>
-                        <span className="text-2xl font-bold text-green-800">{pkg.range}</span>
-                      </div>
-                    </div>
-                  ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                icon: <ChefHat size={32} />,
+                title: "Chef-Curated Menus",
+                desc: "Every dish is prepared using time-honored recipes and premium spices sourced directly from India."
+              },
+              {
+                icon: <Award size={32} />,
+                title: "Flawless Execution",
+                desc: "From elegant setup to professional service, our team ensures your event runs smoothly and perfectly."
+              },
+              {
+                icon: <Utensils size={32} />,
+                title: "Versatile Packages",
+                desc: "Tailored solutions for everything from intimate family gatherings to grand destination weddings."
+              },
+              {
+                icon: <Truck size={32} />,
+                title: "On-Time Delivery",
+                desc: "Reliable, temperature-controlled transport to keep your food fresh, hot, and ready to serve."
+              }
+            ].map((feature, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-white p-8 rounded-[2rem] border border-borderCustom shadow-xl hover:shadow-primary/5 transition-all group"
+              >
+                <div className="w-16 h-16 bg-altBg rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  {feature.icon}
                 </div>
+                <h3 className="text-xl font-bold text-dark mb-4">{feature.title}</h3>
+                <p className="text-subtext leading-relaxed font-medium">
+                  {feature.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
 
+          {/* Large Visual Callout */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="mt-20 bg-dark rounded-[3rem] overflow-hidden relative"
+          >
+            <div className="flex flex-col lg:flex-row items-center">
+              <div className="lg:w-1/2 p-12 lg:p-20">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                  Ready to make your next <br /> event <span className="text-primary italic">unforgettable?</span>
+                </h3>
+                <p className="text-gray-400 text-lg mb-10 font-light leading-relaxed">
+                  Join hundreds of families and corporations in the Bay Area who trust Masala House for their most important milestones. Our dedicated catering manager is ready to help you plan the perfect menu.
+                </p>
                 <a 
                   href="#inquiry" 
-                  className="inline-flex items-center gap-3 bg-[#1a4731] text-white px-10 py-5 rounded-full font-bold tracking-widest text-sm hover:bg-[#0e2a1d] transition-all transform hover:scale-105 shadow-xl"
+                  className="bg-primary text-white px-10 py-5 rounded-full font-bold tracking-widest text-sm hover:bg-primary-dark transition-all inline-block shadow-lg shadow-primary/20"
                 >
-                  GET AN EXACT QUOTE <span className="text-xl">→</span>
+                  START PLANNING NOW
                 </a>
               </div>
-            </motion.div>
-          </div>
+              <div className="lg:w-1/2 h-[400px] lg:h-[600px] relative">
+                <img 
+                  src="/assets/indian_restaurant_event_setup.png" 
+                  alt="Catering Setup" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-dark via-transparent to-transparent hidden lg:block"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent lg:hidden"></div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -432,14 +450,6 @@ const Catering = () => {
                 </select>
               </div>
 
-              {/* Budget */}
-              <div className="flex flex-col gap-2">
-                <label className="text-xs uppercase tracking-widest font-bold text-subtext">Budget Per Person *</label>
-                <div className="relative">
-                  <span className="absolute left-6 top-1/2 -translate-y-1/2 text-subtext font-bold">$</span>
-                  <input type="number" placeholder="25" className="w-full bg-altBg/30 border border-borderCustom pl-10 pr-6 py-4 rounded-xl focus:border-primary focus:outline-none transition-colors" required />
-                </div>
-              </div>
 
               {/* Dietary Needs */}
               <div className="flex flex-col gap-2">

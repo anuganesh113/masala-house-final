@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 import { Star, Clock, Heart, Users, Coffee, Utensils, Award, ChefHat, CheckCircle, ChevronDown, ChevronRight, ChevronLeft } from 'lucide-react';
 import USPGrid from '../components/USPGrid';
 import SEO from '../components/SEO';
+import PopularItemsSection from '../components/PopularItemsSection';
+import TextSlider from '../components/TextSlider';
+import ExploreMenuSection from '../components/ExploreMenuSection';
+import ExperienceSection from '../components/ExperienceSection';
+import StreetFoodSection from '../components/StreetFoodSection';
+import EventsSection from '../components/EventsSection';
+import ReservationSection from '../components/ReservationSection';
 
 const testimonialsData = [
   { rating: 5, text: "Absolutely incredible! The lunch buffet has such a fantastic variety and the butter chicken is out of this world. Highly recommend!", author: "Michael R.", location: "Concord", platform: "Google" },
@@ -121,6 +128,15 @@ const Home = () => {
         </div>
       </motion.section>
 
+      {/* ZONE 3.5: EXPERIENCE SECTION */}
+      <ExperienceSection />
+
+      {/* ZONE 3.6: STREET FOODS SECTION */}
+      <StreetFoodSection />
+
+      {/* ZONE 8: EXPLORE WHOLE MENU */}
+      <ExploreMenuSection />
+
       {/* ZONE 4: FEATURE CARDS */}
       <section id="buffet" className="section-padding bg-altBg">
         <div className="site-container">
@@ -213,10 +229,20 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ZONE 5: USP GRID */}
+      {/* ZONE 5: POPULAR ITEMS (Choose from our delicious collection) */}
+      <PopularItemsSection />
+
+      {/* ZONE 5.5: EVENTS SECTION */}
+      <EventsSection />
+
+      {/* ZONE 6: USP GRID */}
       <USPGrid bgClass="bg-white" />
 
-      {/* ZONE 6: TESTIMONIALS */}
+      {/* ZONE 7: TEXT SLIDER */}
+      <TextSlider />
+
+
+      {/* ZONE 9: TESTIMONIALS */}
       <section className="section-padding bg-white relative">
         <div className="site-container">
           <div className="text-center mb-20 px-4">
@@ -300,6 +326,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <ReservationSection />
     </div>
   );
 };
