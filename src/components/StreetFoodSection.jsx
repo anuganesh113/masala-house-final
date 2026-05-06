@@ -30,7 +30,7 @@ const StreetFoodSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-5xl md:text-7xl font-black text-dark tracking-tighter mb-6 font-bebas"
+              className="text-5xl md:text-7xl font-black text-dark tracking-wide mb-6 font-bebas"
             >
               Vibrant <span className="text-primary">Street Foods</span>
             </motion.h2>
